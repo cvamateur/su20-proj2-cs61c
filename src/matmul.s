@@ -37,11 +37,11 @@ matmul:
 
     # Prologue
     addi sp, sp, -40
-    sw, ra, 20(sp)
-    sw, s8, 16(sp)
-    sw, s7, 16(sp)
-    sw, s6, 16(sp)
-    sw, s5, 16(sp)
+    sw, ra, 36(sp)
+    sw, s8, 32(sp)
+    sw, s7, 28(sp)
+    sw, s6, 24(sp)
+    sw, s5, 20(sp)
     sw, s4, 16(sp)
     sw, s3, 12(sp)
     sw, s2, 8(sp)
@@ -110,11 +110,11 @@ outer_loop_end:
     lw, s2, 8(sp)
     lw, s3, 12(sp)
     lw, s4, 16(sp)
-    lw, s5 16(sp)
-    lw, s6, 16(sp)
-    lw, s7, 16(sp)
-    lw, s8, 16(sp)
-    lw, ra, 20(sp)
+    lw, s5, 20(sp)
+    lw, s6, 24(sp)
+    lw, s7, 28(sp)
+    lw, s8, 32(sp)
+    lw, ra, 36(sp)
     addi sp, sp, 40
 
     ret
