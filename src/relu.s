@@ -14,8 +14,7 @@
 # ==============================================================================
 relu:
     # Prologue
-    addi sp, sp, -12
-    sw ra, 8(sp)
+    addi sp, sp, -8
     sw s1, 4(sp)
     sw s0, 0(sp)
 
@@ -40,7 +39,6 @@ loop_end:
     # Epilogue
     lw s0, 0(sp)
     lw s1, 4(sp)
-    lw ra, 8(sp)
-    addi sp, sp, 12
+    addi sp, sp, 8
     
 	ret
