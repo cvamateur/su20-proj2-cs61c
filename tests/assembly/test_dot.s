@@ -17,9 +17,9 @@ main:
     # Set vector attributes
     mv a0, s0
     mv a1, s1
-    addi a2, x0, 3
-    addi a3, x0, 1
-    addi a4, x0, 2
+    addi a2, x0, 9      # length
+    addi a3, x0, 1      # stride of v0
+    addi a4, x0, 1      # stride of v1
 
     # Call dot function
     jal ra, dot

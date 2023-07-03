@@ -32,16 +32,15 @@ main:
     lw s4, 0(s2)
 
     # --------------------------------------------------------
-
-    # Print rows and columns
-    mv a1, s3
-    jal ra, print_int
-    li a1, ' '
-    jal ra, print_char
-    mv a1, s4
-    jal ra, print_int
-    li a1, '\n'
-    jal ra, print_char
+    ## Print rows and columns
+    # mv a1, s3
+    # jal ra, print_int
+    # li a1, ' '
+    # jal ra, print_char
+    # mv a1, s4
+    # jal ra, print_int
+    # li a1, '\n'
+    # jal ra, print_char
 
     # Print out elements of matrix
     mv a0, s0
